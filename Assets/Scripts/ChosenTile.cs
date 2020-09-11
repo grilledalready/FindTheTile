@@ -16,6 +16,8 @@ public class ChosenTile : MonoBehaviour
         SelectTile();
     }
 
+    
+    //Selects tile based on its tiletype
     public void SelectTile()
     {
         if (!clicked)

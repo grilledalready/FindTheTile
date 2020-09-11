@@ -24,6 +24,7 @@ public class KeyboardInput : MonoBehaviour
 
     public void ResetKeyboard() { SpawnTiles.instance.HighlightTile(selectedTile, nColor); xTile = 0; yTile = 0; selectedTile = SpawnTiles.instance.tiles[xTile, yTile]; }
 
+    //Logic to select current tile
     public void SetTile(GameObject sTile, int x, int y)
     {
         SpawnTiles.instance.HighlightTile(selectedTile, nColor);
@@ -33,6 +34,8 @@ public class KeyboardInput : MonoBehaviour
         yTile = y;
     }
 
+
+    //Keyboard inputs to select tile
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
